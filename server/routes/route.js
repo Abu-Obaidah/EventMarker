@@ -1,10 +1,13 @@
-import express, { response } from 'express';
+import express from 'express';
 
-import { addUser, getUser } from '../controller/user-controller.js';
+import { addUser, getUser, getUserId, editUser, deleteUser } from '../controller/user-controller.js';
 
 const router = express.Router();
 
 router.post('/add', addUser);
 router.get('/View', getUser);
+router.get('/:id', getUserId);
+router.put('/:id', editUser);
+router.delete('/:id', deleteUser);
 
 export default router;

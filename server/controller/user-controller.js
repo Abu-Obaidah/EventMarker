@@ -1,3 +1,4 @@
+import { request, response } from 'express';
 import User from '../schema/user-schema.js'
 
 
@@ -13,11 +14,40 @@ export const addUser = async (request, response) => {
     }
 }
 
-export const getUser = async (req,res) => {
+export const getUser = async (request, response) => {
     try {
         const users = await User.find({});
-        res.status(200).json(users)
+        response.status(200).json(users)
     } catch (err) {
-        res.status(404).json({ message: error.message});
+        response.status(404).json({ message: err.message });
+    }
+}
+
+export const getUserId = async (request, response) => {
+    try {
+        const user = await User.findById(request.params.id);
+        response.status(200).json(user)
+    } catch (err) {
+        response.status(404).json({ message: err.message });
+    }
+}
+
+export const editUser = async (request, response) => {
+    let user = request.body;
+    const editUser = new User(user);
+    try {
+        await User.updateOne({ _id: request.params.id }, editUser);
+        response.status(201).json(editUser)
+    } catch (err) {
+        response.status(409).json({ message: err.message });
+    }
+}
+
+export const deleteUser = async (request, response) => {
+    try {
+        await User.deleteOne({ _id: request.params.id });
+        response.status(200).json({ message: "USer deleted Successfully" })
+    } catch (err) {
+        response.status(409).json({ message: err.message });
     }
 }
