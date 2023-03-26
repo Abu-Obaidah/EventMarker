@@ -1,4 +1,3 @@
-import { request, response } from 'express';
 import User from '../schema/user-schema.js'
 
 
