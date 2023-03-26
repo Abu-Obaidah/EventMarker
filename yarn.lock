@@ -2,35 +2,6 @@
 # yarn lockfile v1
 
 
-"@fullcalendar/core@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.npmjs.org/@fullcalendar/core/-/core-6.1.4.tgz"
-  integrity sha512-ZDD0Owv0LezAk14nsRNaOc9nbowItGmT0mnjOhEw+L6B8P5eads8yYaNA9itn70MWoOjiAG8xqD7Yk1iJGxqgQ==
-  dependencies:
-    preact "^10.0.5"
-
-"@fullcalendar/daygrid@^6.1.4", "@fullcalendar/daygrid@~6.1.4":
-  version "6.1.4"
-  resolved "https://registry.npmjs.org/@fullcalendar/daygrid/-/daygrid-6.1.4.tgz"
-  integrity sha512-X0QWEiA/hT8GYiQzmXt9DlZTWaQbNtBHBXGtaMNcVXbGHDCzLoWTHrde/jABGfr/i2+d9sLUO4oTtwz2HVpNtQ==
-
-"@fullcalendar/interaction@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.npmjs.org/@fullcalendar/interaction/-/interaction-6.1.4.tgz"
-  integrity sha512-69G2B61bPiHy7VyTDiwU9l8yRHPUK9XxNxjIdm3N0nvWR6BaUIBDQe8dIWht+IZUf9qirFhnfcLWkRI0fOTWtw==
-
-"@fullcalendar/react@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.npmjs.org/@fullcalendar/react/-/react-6.1.4.tgz"
-  integrity sha512-9nc0uHr7zfhNIMyaM+ftoVqX9UEn+frCjTeofN3lcl3bCYvo2dwLw+n9jBJx//f+NRrSwmIvKq2JrqmF2IrwJA==
-
-"@fullcalendar/timegrid@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.npmjs.org/@fullcalendar/timegrid/-/timegrid-6.1.4.tgz"
-  integrity sha512-B2/levLKW0CyDQru75JeuASpCZml5W8sINCwVTstxxhjKmNBG3F5qvSX12DDrTdga/ySYObNNP1pKDwavKk/JQ==
-  dependencies:
-    "@fullcalendar/daygrid" "~6.1.4"
-
 "@wojtekmaj/date-utils@^1.0.2":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@wojtekmaj/date-utils/-/date-utils-1.1.3.tgz#7be7fb33a2b987d886ff868877ee8c7908176e85"
@@ -119,11 +90,6 @@ object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==
-
-preact@^10.0.5:
-  version "10.13.1"
-  resolved "https://registry.npmjs.org/preact/-/preact-10.13.1.tgz"
-  integrity sha512-KyoXVDU5OqTpG9LXlB3+y639JAGzl8JSBXLn1J9HTSB3gbKcuInga7bZnXLlxmK94ntTs1EFeZp0lrja2AuBYQ==
 
 prop-types@^15.6.0:
   version "15.8.1"
