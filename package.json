@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "child_process": "^1.0.2",
     "moment": "^2.29.4",
     "mongoose-auto-increment": "^5.0.1",
     "react-calendar": "^4.0.0",
